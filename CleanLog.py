@@ -6,7 +6,7 @@ file_path = input("Enter The file path: ")
 active = True
 
 while active:
-    if path.exists(file_path) and file_path.endswith('csv'):
+    if path.exists(file_path) and file_path.endswith('CSV') or file_path.endswith('csv'):
         print('File will be ready @ BatmonLogCleaned.csv in root folder')
 
         with open(file_path, 'r+') as inp, open('BatmonLogCleaned.csv', 'w+') as out:
